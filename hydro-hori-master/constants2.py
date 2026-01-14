@@ -1,0 +1,48 @@
+import pygame
+
+
+# Screen dimensions
+SCREEN_WIDTH =800
+SCREEN_HEIGHT =700
+GAME_WIDTH = 300
+#GAME_LEFT_BOUNDARY = (SCREEN_WIDTH - GAME_WIDTH) // 2       #250
+#GAME_RIGHT_BOUNDARY = GAME_LEFT_BOUNDARY + GAME_WIDTH       #550
+GAME_LEFT_BOUNDARY = 250
+GAME_RIGHT_BOUNDARY = 550
+
+
+# Colors
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+DARK_GRAY = (105, 105, 105)
+
+# Truck settings
+TRUCK_WIDTH = 50
+TRUCK_HEIGHT = 150
+TRUCK_SPEED = 5
+
+# Vehicle settings
+VEHICLE_WIDTH = 50
+VEHICLE_HEIGHT = 50
+
+# Fuel cell settings
+FUEL_CELL_SIZE = 20
+
+# Obstacle settings
+OBSTACLE_SIZE = 30
+
+# Fuel station settings
+FUEL_STATION_WIDTH = 60
+FUEL_STATION_HEIGHT = 60
+
+# Maintenance settings
+MAINTENANCE_STATION_WIDTH = 60
+MAINTENANCE_STATION_HEIGHT = 60
+
+
+
+
+#start_time = 5 * 60 * 1000
+#ROAD_SCROLL_SPEED = 5
