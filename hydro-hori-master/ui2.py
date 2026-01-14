@@ -11,21 +11,17 @@ pygame.init()
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
 # Load and scale background images
-pause_menu_background = pygame.image.load('assets/B1_End_1.png').convert()
+pause_menu_background = pygame.image.load('hydro-hori-master/assets/B1_End_1.png').convert()
 pause_menu_background = pygame.transform.scale(pause_menu_background, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
-game_over_background = pygame.image.load('assets/B1_End.png').convert()
+game_over_background = pygame.image.load('hydro-hori-master/assets/B1_End.png').convert()
 game_over_background = pygame.transform.scale(game_over_background, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
-get_player_background = pygame.image.load('assets/B1_End.png').convert()
-get_player_background = pygame.transform.scale(game_over_background, (SCREEN_WIDTH, SCREEN_HEIGHT))
-
+get_player_background = pygame.image.load('hydro-hori-master/assets/B1_End.png').convert()
+get_player_background = pygame.transform.scale(get_player_background, (SCREEN_WIDTH, SCREEN_HEIGHT))
 # Load fonts
-large_font = pygame.font.Font('assets/font.ttf', 32)
-developer_font = pygame.font.Font('assets/font.ttf', 10)
-
-
-
+large_font = pygame.font.Font('hydro-hori-master/assets/font.ttf', 32)
+developer_font = pygame.font.Font('hydro-hori-master/assets/font.ttf', 10)  
 import pygame
 
 def get_player_name(screen, converted_trucks, fuel_cells, sound_manager):

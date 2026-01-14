@@ -10,8 +10,8 @@ def draw_centered_text(text, font, color, screen, x, y):
 
 def show_options(screen, sound_manager):
     """Display options screen"""
-    font = pygame.font.Font('assets/font.ttf', 24)
-    small_font = pygame.font.Font('assets/font.ttf', 20)
+    font = pygame.font.Font('hydro-hori-master/assets/font.ttf', 24)
+    small_font = pygame.font.Font('hydro-hori-master/assets/font.ttf', 20)
     
     # Create buttons
     button_y_start = SCREEN_HEIGHT // 3
@@ -29,7 +29,7 @@ def show_options(screen, sound_manager):
     while running:
         screen.fill(BLACK)
         # Draw background
-        background = pygame.image.load('assets/highway_1.png').convert()
+        background = pygame.image.load('hydro-hori-master/assets/highway_1.png').convert()
         background = pygame.transform.scale(background, (SCREEN_WIDTH, SCREEN_HEIGHT))
         screen.blit(background, (0, 0))
 

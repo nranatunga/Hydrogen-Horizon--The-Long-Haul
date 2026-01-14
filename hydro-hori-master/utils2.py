@@ -12,7 +12,7 @@ DARK_SKY_BLUE = (70, 130, 180, 128)
 class Button:
     def __init__(self, x, y, text, font_size=24, padding_x=30, padding_y=15, normal_color=SKY_BLUE, hover_color=DARK_SKY_BLUE, shape='rectangle'):
         self.text = text
-        self.font = pygame.font.Font('assets/font.ttf', font_size)
+        self.font = pygame.font.Font('hydro-hori-master/assets/font.ttf', font_size)
         
         # Calculate button size based on text
         text_surface = self.font.render(text, True, WHITE)

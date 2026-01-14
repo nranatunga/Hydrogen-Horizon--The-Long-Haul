@@ -12,12 +12,12 @@ def draw_text_block(screen, text, font, color, x, y, line_spacing=10):
 
 def show_instructions(screen):
     # Load and scale background
-    background = pygame.image.load('assets/highway_1.png').convert()
+    background = pygame.image.load('hydro-hori-master/assets/highway_1.png').convert()
     background = pygame.transform.scale(background, (SCREEN_WIDTH, SCREEN_HEIGHT))
     
     # Create fonts
-    title_font = pygame.font.Font('assets/font.ttf', 36)
-    instruction_font = pygame.font.Font('assets/font.ttf', 15)
+    title_font = pygame.font.Font('hydro-hori-master/assets/font.ttf', 36)
+    instruction_font = pygame.font.Font('hydro-hori-master/assets/font.ttf', 15)
     
     # Create back button using Button class from utils, positioned at bottom right corner
     back_button = Button(SCREEN_WIDTH - 140, SCREEN_HEIGHT - 60, text="Back", font_size=24, padding_x=20, padding_y=10)

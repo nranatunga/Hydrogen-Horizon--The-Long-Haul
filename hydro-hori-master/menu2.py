@@ -17,13 +17,13 @@ def draw_text_block(screen, text, font, color, x, y, line_spacing=10):
 def show_main_menu(screen, sound_manager):
 
     # Load and scale background image
-    background = pygame.image.load('assets/B1_Title.png').convert()
+    background = pygame.image.load('hydro-hori-master/assets/B1_Title.png').convert()
     background = pygame.transform.scale(background, (SCREEN_WIDTH, SCREEN_HEIGHT))
     
     # Create fonts
-    title_font = pygame.font.Font('assets/font.ttf', 38)
-    subtitle_font = pygame.font.Font('assets/font.ttf', 14)
-    developer_font = pygame.font.Font('assets/font.ttf', 10)
+    title_font = pygame.font.Font('hydro-hori-master/assets/font.ttf', 38)
+    subtitle_font = pygame.font.Font('hydro-hori-master/assets/font.ttf', 14)
+    developer_font = pygame.font.Font('hydro-hori-master/assets/font.ttf', 10)
     
     # Create buttons
     button_y_spacing = 80  # Increased space between buttons to avoid overlap

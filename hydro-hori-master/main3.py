@@ -54,19 +54,19 @@ class ScrollingBackground:
 
 
 # Load background and create scrolling instance
-background_main = pygame.image.load('assets/highway_main.png').convert()
+background_main = pygame.image.load('hydro-hori-master/assets/highway_main.png').convert()
 background_main = pygame.transform.scale(background_main, (constants2.SCREEN_WIDTH, constants2.SCREEN_HEIGHT))
 scrolling_background = ScrollingBackground(background_main, speed=2)
 
 # Load and initialize sprite sheets with correct animation frames
 sprite_sheets = {
-    'player': SpriteSheet(pygame.image.load("assets/pickup_b_n_ss.png").convert_alpha(), 5, 1),
-    'fuel_cell': SpriteSheet(pygame.image.load("assets/fuel_cell_H_ss.png").convert_alpha(), 2, 1),
-    'obstacle': SpriteSheet(pygame.image.load("assets/obs_deer_2_ss.png").convert_alpha(), 8, 1),
-    'vehicle': SpriteSheet(pygame.image.load("assets/truck_b_s.png").convert_alpha(), 1, 1),
-    'fuel_station': SpriteSheet(pygame.image.load("assets/fuel_station_H_ss.png").convert_alpha(), 2, 1),
-    'maintenance': SpriteSheet(pygame.image.load("assets/maintenance.png").convert_alpha(), 1, 1),
-    'minimap': SpriteSheet(pygame.image.load("assets/Hyw_2_ss.png").convert_alpha(), 2, 1)
+    'player': SpriteSheet(pygame.image.load("hydro-hori-master/assets/pickup_b_n_ss.png").convert_alpha(), 5, 1),
+    'fuel_cell': SpriteSheet(pygame.image.load("hydro-hori-master/assets/fuel_cell_H_ss.png").convert_alpha(), 2, 1),
+    'obstacle': SpriteSheet(pygame.image.load("hydro-hori-master/assets/obs_deer_2_ss.png").convert_alpha(), 8, 1),
+    'vehicle': SpriteSheet(pygame.image.load("hydro-hori-master/assets/truck_b_s.png").convert_alpha(), 1, 1),
+    'fuel_station': SpriteSheet(pygame.image.load("hydro-hori-master/assets/fuel_station_H_ss.png").convert_alpha(), 2, 1),
+    'maintenance': SpriteSheet(pygame.image.load("hydro-hori-master/assets/maintenance.png").convert_alpha(), 1, 1),
+    'minimap': SpriteSheet(pygame.image.load("hydro-hori-master/assets/Hyw_2_ss.png").convert_alpha(), 2, 1)
 }
 
 # Initialize sprite groups
@@ -100,7 +100,7 @@ def spawn_entities(sprite_groups, sprite_sheets):
 
 
 # Load fonts
-custom_font_path = 'assets/font.ttf'
+custom_font_path = 'hydro-hori-master/assets/font.ttf'
 font = pygame.font.Font(custom_font_path, 9)
 large_font = pygame.font.Font(custom_font_path, 32)
 

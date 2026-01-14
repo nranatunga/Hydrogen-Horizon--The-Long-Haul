@@ -4,8 +4,8 @@ from utils2 import Button, draw_text
 
 def pause_options(screen, sound_manager):
     """Display options screen during pause, without the main menu return option"""
-    font = pygame.font.Font('assets/font.ttf', 24)
-    small_font = pygame.font.Font('assets/font.ttf', 20)
+    font = pygame.font.Font('hydro-hori-master/assets/font.ttf', 24)
+    small_font = pygame.font.Font('hydro-hori-master/assets/font.ttf', 20)
     
     # Create buttons
     button_y_start = SCREEN_HEIGHT // 3
@@ -23,7 +23,7 @@ def pause_options(screen, sound_manager):
     while running:
         screen.fill(BLACK)
         # Draw background
-        background = pygame.image.load('assets/highway_1.png').convert()
+        background = pygame.image.load('hydro-hori-master/assets/highway_1.png').convert()
         background = pygame.transform.scale(background, (SCREEN_WIDTH, SCREEN_HEIGHT))
         screen.blit(background, (0, 0))
 

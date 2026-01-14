@@ -49,9 +49,9 @@ def draw_centered_text(text, font, color, screen, x, y):
 def show_leaderboards(screen):
     """Display leaderboards screen"""
     leaderboard = Leaderboard()
-    font = pygame.font.Font('assets/font.ttf', 24)
-    small_font = pygame.font.Font('assets/font.ttf', 20)
-    
+    font = pygame.font.Font('hydro-hori-master/assets/font.ttf', 24)
+    small_font = pygame.font.Font('hydro-hori-master/assets/font.ttf', 20)
+
     back_button = Button(SCREEN_WIDTH // 2, SCREEN_HEIGHT - 50, "Back to Main Menu")
     # Track if back button is selected
     back_button_selected = True
@@ -65,7 +65,7 @@ def show_leaderboards(screen):
     running = True
     while running:
         screen.fill(BLACK)
-        background = pygame.image.load('assets/highway_1.png').convert()
+        background = pygame.image.load('hydro-hori-master/assets/highway_1.png').convert()
         background = pygame.transform.scale(background, (SCREEN_WIDTH, SCREEN_HEIGHT))
         screen.blit(background, (0, 0))
 
